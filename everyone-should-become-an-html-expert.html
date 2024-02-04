@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHTML Club - Everyone Should Become HTML Experts</title>
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><a href="/">&larr; back to XHTML Club homepage</a></p>
+    <hr>
+    <h1>Everyone should become an HTML expert</h1>
+    <p><small>Posted on April 6th, 2021</small></p>
+    <p>No matter your profession or level of technical skill - you should master the HTML programming<sup><a href="#1">1</a></sup> language. It's used everywhere on the internet and is very simple to grasp. Since HTML uses logical standards for rendering content it becomes fairly simple to pickup and learn. More on that later.</p>
+    <h3>Why should you bother to learn HTML?</h3>
+    <ol>
+        <li><a href="#easy">Easy to pickup and easy to master</a></li>
+        <li><a href="#understanding">Better understanding of website structure</a></li>
+        <li><a href="#freedom">Ability to attain your own web freedom</a></li>
+    </ol>
+
+    <br>
+    <h2 id="easy">1. Easy to pickup and easy to master</h2>
+    <p>HTML is not a difficult language to understand. I also believe it is fairly easy to <em>master</em>, since the core concepts and structure of HTML is so intuitive. Let's look at a made-up example and you'll see what I mean.</p>
+    <p>Let's pretend that you want to display a page on the big <em>world wide web</em> showcasing your skills at baking cupcakes. Similar to creating a text or Word document on your computer using an application, you probably have a general idea of how the content should be displayed:</p>
+    <ol>
+        <li>Recipe title</li>
+        <li>Ingredients</li>
+        <li>Details</li>
+        <li>(<em>optional</em>) Picture of said cupcakes</li>
+    </ol>
+    <p>Seems simple enough, right? That's because <em>it is</em>. We can now start to work our way through these items one piece at a time.</p>
+    <h3>Recipe title</h3>
+    <p>Since this is the <u>heading</u> of our document (or web page in this context) we will use the HTML heading tag(s):</p>
+    <code>&lt;h1&gt;My Amazing Cupcakes&lt;/h1&gt;</code>
+    <p>Remember how I mentioned HTML being fairly intuitive? Using <code>h1</code> tags, you're telling the browser to render the content within this tag as a <strong>number 1 level heading</strong> &rarr; h-1. If you instead wanted to render your headings at smaller sizes (or give them less importance in the document) you can cycle through all available heading tags <code>2</code> through <code>6</code>. Feel free to <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">learn more about HTML heading elements</a>.</p>
+    <h3>Ingredients</h3>
+    <p>A document item like a set of ingredients would normally best be rendered out into a list. HTML has us covered with that as well:</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Some sugar&lt;/li&gt;
+  &lt;li&gt;Some flour&lt;/li&gt;
+  &lt;li&gt;Some butter&lt;/li&gt;
+  &lt;li&gt;Chocolate&lt;/li&gt;
+  &lt;li&gt;Frosting&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <p>Which would render like this in the browser:</p>
+    <ul>
+        <li>Some sugar</li>
+        <li>Some flour</li>
+        <li>Some butter</li>
+        <li>Chocolate</li>
+        <li>Frosting</li>
+    </ul>
+    <p>The <code>ul</code> tag stands for <em>unordered list</em> and the <code>li</code> elements inside reference <em>list items</em>. Starting to see a simple pattern here? If you wanted to set your list to display as a set of <em>ordered</em> items, just set the parent tag as <code>ol</code> instead of <code>ul</code>. I bet you probably already figured that out though ;) Feel free to learn more about <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">unordered</a> and <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ordered</a> list items.</p>
+    <h3>Details (Instructions)</h3>
+    <p>Now, you could set the recipe details/instructions to be set as another <code>list</code> element, but for this example we are going to render them as paragraph elements:</p>
+<pre><code>&lt;p&gt;Mix all the ingredients together however you think is best. These cupcakes aren't a real recipe anyway!&lt;/p&gt;
+&lt;p&gt;Make sure you don't burn the cupcakes. That would suck.&lt;/p&gt;</code></pre>
+    <p>I know- you're probably shocked that HTML renders <code>p</code> tags as <em>paragraphs</em>.</p>
+    <h3>Picture (optional)</h3>
+    <p>The content above would be more than enough for users to read our document and understand how to bake our delicious cupcakes. But a picture is worth a thousand words:</p>
+<pre><code>&lt;img src=&quot;path/to/your/cupcakes/image&quot; alt=&quot;Delicious chocolate cupcakes&quot;&gt;</code></pre>
+    <p>Yet more intuitive greatness from the HTML gods! An image is represented within an <code>img</code> tag. You use the <code>src</code> (source) attribute to point the browser to the image's location. The <code>alt</code> (alternate text) is a helpful snippet of text that describes what the picture contains (required for those with disabilities or accessibility issues).</p>
+    <p>That's it!</p>
+
+    <br>
+    <h2 id="understanding">2. Better understanding of website structure</h2>
+    <p>By becoming fluent in HTML, you gain a much better understanding on how all websites across the web are constructed. Though a greater understanding of HTML has many benefits, I find having the ability to troubleshoot bugs or issues through a browser's <code>devtools</code> to be the most beneficial.</p>
+    <p>No matter your current job or future career path, being able to mention your expertise of HTML can only be seen as an added bonus to your skill-set. Do not underestimate the power to build website skeletons!</p>
+
+    <br>
+    <h2 id="freedom">3. Ability to attain your own web freedom</h2>
+    <p>The other benefits of learning HTML posted above are great - but I believe the best reason to become an HTML master is the <em>web freedom</em> associated with it. You gain the ability to create, edit and share your own website without the help of any 3rd party builders or locked-in content management systems. Instead, your workflow might be something like:</p>
+    <ol>
+        <li>Open a text editor</li>
+        <li>Begin writing out your content with semantic HTML</li>
+        <li>Save file as `index.html`</li>
+        <li>Upload to your web host</li>
+    </ol>
+    <p>And with free hosting services such as <a target="_blank" href="https://netlify.com">Netlify</a> or <a target="_blank" href="https://m.do.co/c/74b3fd11c07a">DigitalOcean</a> it's not like you'll be breaking the bank to have that website live on the interwebs! (You could go down the rabbit-hole of increasing your web freedom by self hosting your content etc - but I'll save that for another day)</p>
+
+    <br>
+    <h2>Wrapping up</h2>
+    <p>There can only be positives to gain from jumping into HTML and eventually mastering the language. It's the core skeleton implemented across the web (no matter how complex the framework used to get there might be) and isn't going away anytime soon. Some might advocate for becoming fluent in Markdown or a similar formatted text language but I would strongly advocate for the real deal: HTML.</p>
+
+    <br>
+    <p id="1"><small>1. This is a common debate - but for simplicity sake I'm just calling it this.</small></p>
+    <footer>
+        <h3>Support XHTML</h3>
+        <p>All content posted on this website will always remain free to everyone. No pay-walls, obtrusive ads or annoying tracking cookies. Basically zero bullshit or fluff. If you feel like you would like to support my efforts in continuously posting free (<em>and hopefully interesting</em>) content, then please consider <a href="https://www.buymeacoffee.com/WQTMtn7ir">donating</a>.</p>
+
+        <h3>Colophon</h3>
+        <p>This website is hand-coded with vanilla HTML and hosted on <a href="https://sourcehut.org">Sourcehut</a>. Reach out on <a rel="me" href="https://fosstodon.org/@tdarb">Mastodon</a></p>
+    </footer>
+</body>
+</html>
