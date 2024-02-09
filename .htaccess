@@ -1,7 +1,7 @@
 Options +Includes
 XBitHack Full
 
-Header add Strict-Transport-Security "max-age=157680000"
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self';"
 Header always append X-Frame-Options SAMEORIGIN
 Header always set X-Content-Type-Options nosniff
